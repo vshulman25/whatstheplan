@@ -2,29 +2,12 @@
 var days = document.querySelectorAll('.event')
 
 
-
-// console.log(days)
-
 days.forEach(day => {
     var date = dayjs(day.dataset.date).format('MMMM, ddd D. h:mm A')
     var dateEl = day.querySelector('.date')
     dateEl.innerText = date
 } )
 
-// var calendar = require('dayjs/plugin/calendar')
-// dayjs.extend(calendar)
-
-
-
-// dayjs().calendar(dayjs('2008-01-01'))
-// dayjs().calendar(null, {
-//   sameDay: '[Today at] h:mm A', // The same day ( Today at 2:30 AM )
-//   nextDay: '[Tomorrow at] h:mm A', // The next day ( Tomorrow at 2:30 AM )
-//   nextWeek: 'dddd [at] h:mm A', // The next week ( Sunday at 2:30 AM )
-//   lastDay: '[Yesterday at] h:mm A', // The day before ( Yesterday at 2:30 AM )
-//   lastWeek: '[Last] dddd [at] h:mm A', // Last week ( Last Monday at 2:30 AM )
-//   sameElse: 'DD/MM/YYYY' // Everything else ( 17/10/2011 )
-// }) 
 
 $(document).ready(function(){
     var now = dayjs().format('MMMM, ddd D. h:mm A')
@@ -43,6 +26,20 @@ $(document).ready(function(){
 
 $("#hour-9 .description").val(localStorage.getItem("hour-9"))
 $("#hour-10 .description").val(localStorage.getItem("hour-10"))
+$("#hour-11 .description").val(localStorage.getItem("hour-11"))
+$("#hour-12 .description").val(localStorage.getItem("hour-12"))
+$("#hour-13 .description").val(localStorage.getItem("hour-13"))
+$("#hour-14 .description").val(localStorage.getItem("hour-14"))
+$("#hour-15 .description").val(localStorage.getItem("hour-15"))
+$("#hour-16 .description").val(localStorage.getItem("hour-16"))
+$("#hour-17 .description").val(localStorage.getItem("hour-17"))
+$("#hour-18 .description").val(localStorage.getItem("hour-18"))
+$("#hour-19 .description").val(localStorage.getItem("hour-19"))
+$("#hour-20 .description").val(localStorage.getItem("hour-20"))
+
+
+
+
 
 function styleUpdate(){
     var daytime = dayjs().hour()
