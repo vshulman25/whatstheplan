@@ -25,6 +25,14 @@ textarea{
   white-space: pre-wrap;
 }
 
+/* added styling to current date */
+#currentDay {
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .time-block{
   text-align: center;
   border-radius: 15px;
